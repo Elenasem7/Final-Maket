@@ -1,0 +1,123 @@
+$section-padding-vertical-m: 44px;
+$section-padding-vertical:  $section-padding-vertical-m / 2;
+
+$section-primaty-background: #f1f1f1;
+
+.section {
+  position: relative;
+}
+
+.main-background {
+  background: $global-primary-color;
+}
+
+.secondary-background {
+  background: $global-secondary-background;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 74vh;
+  background-image: url(../images/hero/Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.hero-body {
+  position: absolute;
+  bottom: 145px;
+  left: 115px;
+}
+
+.angle-overlay {
+  position: absolute;
+  bottom: 0;
+  transform: skewY(-2deg);
+  transform-origin: right;
+  width: 100%;
+  height: 100px;
+  background-color: #fd634e;
+  opacity: 0.3;
+}
+
+.section-background {
+  position: relative;
+  width: 100%;
+  height: 64vh;
+  background-image: url(../images/footer/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.left-angle {
+  position: absolute;
+  width: 100%;
+  height: 24%;
+  bottom: -212px;
+  transform: skewY(-4deg);
+  transform-origin: left;
+  background-color: #0d1119;
+}
+
+.right-angle {
+  position: absolute;
+  width: 100%;
+  height: 14%;
+  bottom: -16px;
+  transform: skewY(4deg);
+  transform-origin: left;
+  background-color: #0d1119;
+}
+
+.body {
+  position: absolute;
+  top: 39%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 15px;
+}
+
+.section-background .body h2 {
+  color: #ffffff;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: -0.45px;
+}
+
+.section-background .body p {
+  text-align: center; 
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.16px;
+}
+
+.bg-dark {
+  background-color: #0d1119;
+}
+
+.red-angle {
+  position: relative;
+  left: -60%;
+  -webkit-transform: skewX(88deg);
+  transform: skewX(88deg);
+  width: 100%;
+  height: 30px;
+  margin-bottom: 50px;
+  background-color: #fd634e;
+  overflow: hidden;
+}
+
+@media (max-width:$breakpoint-large-max){
+  .feature {
+     padding-top: 100px;
+  }
+}
